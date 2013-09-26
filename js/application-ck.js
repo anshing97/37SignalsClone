@@ -1,0 +1,1 @@
+$(document).ready(function(){window.console.log("ready");$(".card").hover(function(){window.console.log("hovering")})});

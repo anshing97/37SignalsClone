@@ -1,0 +1,180 @@
+body {
+  font-family: 'Lucida Grande', sans-serif;
+}
+
+/* header */ 
+
+nav {
+  text-align: right;
+  font-size: 13px;
+  line-height: 28px;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #3F7FBB;
+}
+
+nav a:hover {
+  color: #88BEE9;  
+}
+
+nav a.emphasized {
+  color: #51BACE;
+}
+
+nav a.emphasized:hover {
+  color: #3F7FBB;
+}
+
+.today {
+  color: #AAA;
+  float: left;
+  margin-left: 0;
+}
+
+header {
+  margin: 25px 60px 40px 60px;
+}
+
+/* main content */ 
+
+#main {
+  min-width: 1000px;
+  text-align: center;
+}
+
+#logo {
+  margin-bottom: 30px;
+  display: inline;
+}
+
+#headline {
+  width: 920px;
+  margin: 0 auto;  
+  position: relative; /* make this relative to position arrows within it */
+}
+
+#headline a {
+  color: #11649B;
+}
+
+h1, h2 {
+  font-family: Georgia, serif;
+  font-weight: bold;
+}
+
+.company-hl h1 {
+  font-size: 48px;  
+  line-height: 65px;
+}
+
+.company-hl h2 {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.product-hl h1 {
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.product-hl p {
+  margin: 15px 0 31px 0;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+#bc, #cf, #hr {
+  display: none;
+}
+
+#bc img {
+  position: absolute;
+  top: 165px;
+  left: 280px;
+}
+
+#hr img {
+  position: absolute;
+  top: 165px;
+  left: 520px;
+}
+
+#cf img {
+  position: absolute;
+  top: 165px;
+  left: 585px;
+}
+
+/* cards */ 
+
+.products {
+  margin-bottom: 30px;
+}
+
+.card {
+
+  text-decoration: none;
+
+  padding: 25px 15px;
+  margin: 16px;
+
+  width: 170px;
+
+  border: 1px solid #DDD;
+  border-radius: 5px;
+
+  display: inline-block;
+
+  background: linear-gradient(to bottom, #FFF, #EEE);
+  box-shadow: 0px 0px 3px rgba(0,0,0,0.1);
+}
+
+.card p, .card h3, .card h4 {
+  color: black;
+}
+
+.card p {
+  line-height: 20px;
+}
+
+.card img {
+  display: block;
+  margin: 0 auto 15px auto;
+}
+
+.card h3 {
+  color: #0E72B4;
+
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.card h4 {
+  margin: 18px 0;
+
+  color: #AA0000;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* seperator */ 
+
+hr {
+  height: 12px;
+
+  border-style: none;
+  background-image: url('../images/img-hr.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+
+
