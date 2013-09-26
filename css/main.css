@@ -69,52 +69,33 @@ h1, h2 {
   font-weight: bold;
 }
 
-.company-hl h1 {
+.company h1 {
   font-size: 48px;  
   line-height: 65px;
 }
 
-.company-hl h2 {
+.company h2 {
   margin: 20px 0;
   font-size: 18px;
 }
 
-.product-hl h1 {
+.product h1 {
   font-size: 36px;
   line-height: 46px;
 }
 
-.product-hl p {
+.product p {
   margin: 15px 0 31px 0;
   font-size: 16px;
   line-height: 25px;
 }
 
-#bc, #cf, #hr {
+#bc-hl, #cf-hl, #hr-hl {
   display: none;
 }
 
-#bc img {
-  position: absolute;
-  top: 165px;
-  left: 280px;
-}
-
-#hr img {
-  position: absolute;
-  top: 165px;
-  left: 520px;
-}
-
-#cf img {
-  position: absolute;
-  top: 165px;
-  left: 585px;
-}
-
 /* cards */ 
-
-.products {
+.cards {
   margin-bottom: 30px;
 }
 
@@ -134,6 +115,8 @@ h1, h2 {
 
   background: linear-gradient(to bottom, #FFF, #EEE);
   box-shadow: 0px 0px 3px rgba(0,0,0,0.1);
+
+  position: relative; /* make this relative so we can position the arrow */ 
 }
 
 .card p, .card h3, .card h4 {
@@ -164,6 +147,26 @@ h1, h2 {
   font-size: 15px;
   font-weight: bold;
 }
+
+/* adjust the position of the arrow for hover */ 
+.card .arrow {
+  position: absolute;
+}
+
+#bc-card .arrow, #hr-card .arrow {
+  top: -40px;
+  left: 160px;
+}
+
+#cf-card .arrow {
+  top: -40px;
+  left: -20px;
+}
+
+.card .arrow {
+  display: none;
+}
+
 
 /* seperator */ 
 

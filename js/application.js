@@ -1,19 +1,22 @@
 
 $(document).ready(function(){
 
-  var card_hover_effect = function (card_selector, show_selector) {
+  var card_hover_effect = function (card_selector, headline_selector) {
+
     $(card_selector).mouseenter(function(){
-      $('#signals').hide();
-      $(show_selector).show();    
+      $('#37-signals-hl').hide();
+      $(headline_selector).show();    
+      $(this).children(".arrow").show();      
     }).mouseleave(function(){
-      $(show_selector).hide();
-      $('#signals').show();
+      $(headline_selector).hide();
+      $('#37-signals-hl').show();
+      $(this).children(".arrow").hide();      
     })
   };
 
-  card_hover_effect("#basecamp","#bc");
-  card_hover_effect("#campfire","#cf");
-  card_hover_effect("#highrise","#hr");
+  card_hover_effect("#bc-card","#bc-hl");
+  card_hover_effect("#cf-card","#cf-hl");
+  card_hover_effect("#hr-card","#hr-hl");
 
 });
 
