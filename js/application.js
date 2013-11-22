@@ -1,22 +1,24 @@
+$(function(){
 
-$(document).ready(function(){
+  var $signals = $('#signals');
 
-  var card_hover_effect = function (card_selector, headline_selector) {
+  $('.card').hover(function(){
 
-    $(card_selector).mouseenter(function(){
-      $('#37-signals-hl').hide();
-      $(headline_selector).show();    
-      $(this).children(".arrow").show();      
-    }).mouseleave(function(){
-      $(headline_selector).hide();
-      $('#37-signals-hl').show();
-      $(this).children(".arrow").hide();      
-    })
-  };
+    var product = $(this).data('product');
 
-  card_hover_effect("#bc-card","#bc-hl");
-  card_hover_effect("#cf-card","#cf-hl");
-  card_hover_effect("#hr-card","#hr-hl");
+    $signals.hide(); 
+    $('.description[data-product="' + product + '"]').show(); 
+    $(this).children('.arrow').show();
+
+  },function(){
+
+    var product = $(this).data('product');
+    
+    $signals.show(); 
+    $('.description[data-product="' + product + '"]').hide(); 
+    $(this).children('.arrow').hide();
+
+  }); 
 
 });
 
